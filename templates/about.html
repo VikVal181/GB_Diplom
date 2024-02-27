@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}О нас{% endblock %}
+
+
+{% block nav %}
+{% include 'nav.html' with list_types=list_types%}
+{% endblock %}
+
+{% block content %}
+<div class="my_base">
+<h1>Турклуб LesOK</h1>
+<h2>Мы очень хороший турклуб</h2>
+</div>
+
+{% endblock %}

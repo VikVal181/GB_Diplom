@@ -1,0 +1,27 @@
+.prod_image {
+    width: 250px;
+    /* position: fixed; */
+    display: block;
+    margin: 0 auto;
+
+}
+
+.btn_add, .linka {
+    display: block;
+    margin: 0 auto;
+    background-color: #64b47c;
+    border: 1px solid #70cf8d;
+    border-radius: 5px;
+}
+
+.btn_add:hover {
+    background-color:  #15ac42;
+}
+
+.product {
+    width: 370px;
+    border: none;
+    border-width: none;
+    background-color: rgb(176, 233, 184);
+    backdrop-filter: alpha(opacity=100);
+}

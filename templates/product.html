@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css\product_css.css' %}">
+<div class="product">
+  <img class="prod_image" src="/{{ product.image }}">
+<a class="linka" href="{% url 'product' product.id %}">
+  <h2>{{ product.title_pr }}</h2>
+</a>
+<p>{{ product.description_pr }}</p>
+<p>Количество мест: {{ product.numbers }}</p>
+<p>Сложность: {{ product.difficulte}} </p>
+<p>Даты: {{ product.date_start }} - {{ product.date_finish }} </p>
+
+{% if request.user.is_authenticated %}
+<form method="POST">
+  {% csrf_token %}
+  <button class="btn_add" name="product" value="{{ product.id }}">Присоединиться
+  </button>
+</form>
+{% endif %}
+</div>
